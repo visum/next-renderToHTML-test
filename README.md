@@ -4,7 +4,7 @@ Based on the ssr-caching demo. Adding a `getServerSideProps` hook to a page caus
 
 - Run `npm run dev` to start the server.
 - Navigate to `http://localhost:3000/`
-- See in the console that the rendered data is `null`, the response was sent, and a `finish` event handler on the `req` is triggered even though we commented out the lines that send the response.
+- See in the console that the rendered data is `null`, the headers were sent, and a `finish` event handler on the `req` is triggered even though we commented out the lines that send the response.
 
 From
 `packages/next/next-server/server/text-server.ts` `renderToHTMLWithComponents()`
